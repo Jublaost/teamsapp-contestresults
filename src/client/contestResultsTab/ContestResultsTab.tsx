@@ -3,7 +3,7 @@ import { Provider, Flex, Text, Button, Header } from "@fluentui/react-northstar"
 import { useState, useEffect } from "react";
 import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
-import { Bar } from 'react-chartjs-2';
+import { Bar } from "react-chartjs-2";
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -11,8 +11,8 @@ import {
     BarElement,
     Title,
     Tooltip,
-    Legend,
-} from 'chart.js';
+    Legend
+} from "chart.js";
 
 ChartJS.register(
     CategoryScale,
@@ -43,32 +43,32 @@ export const ContestResultsTab = () => {
                     setIsLoaded(true);
                     setResult(result);
                 },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
+                // Note: it"s important to handle errors here
+                // instead of a catch() block so that we don"t swallow
                 // exceptions from actual bugs in components.
                 (error) => {
                     setIsLoaded(true);
                     setError(error);
                 }
-            )
+            );
     }, []);
 
     const options = {
-        indexAxis: 'y' as const,
+        indexAxis: "y" as const,
         elements: {
             bar: {
-                borderWidth: 3,
-            },
+                borderWidth: 3
+            }
         },
         responsive: true,
         plugins: {
             legend: {
-                display: false,
+                display: false
             },
             title: {
-                display: false,
-            },
-        },
+                display: false
+            }
+        }
     };
 
     const labels = contestresults!.map((item: any) => item.name);
@@ -78,10 +78,10 @@ export const ContestResultsTab = () => {
         datasets: [
             {
                 data: contestresults!.map((item: any) => item.count),
-                borderColor: 'rgb(240,113,0)',
-                backgroundColor: 'rgba(240,113,0, 0.7)',
+                borderColor: "rgb(240,113,0)",
+                backgroundColor: "rgba(240,113,0, 0.7)"
             }
-        ],
+        ]
     };
 
     /**
