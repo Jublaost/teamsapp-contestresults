@@ -1,0 +1,52 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "id": "dfefb7f0-93f6-11ec-ad93-05bc78f50708",
+    "version": "0.0.1",
+    "packageName": "teamsappcontestresults",
+    "developer": {
+        "name": "Jublaost",
+        "websiteUrl": "https://teamsappcontestresults.azurewebsites.net",
+        "privacyUrl": "https://teamsappcontestresults.azurewebsites.net/privacy.html",
+        "termsOfUseUrl": "https://teamsappcontestresults.azurewebsites.net/tou.html"
+    },
+    "name": {
+        "short": "Contest Results",
+        "full": "Contest Results"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://teamsappcontestresults.azurewebsites.net/contestResultsTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team"
+            ],
+            "sharePointPreviewImage": "https://teamsappcontestresults.azurewebsites.net/assets/contestResultsTab-preview.png",
+            "supportedSharePointHosts": [
+                "sharePointFullPage",
+                "sharePointWebPart"
+            ]
+        }
+    ],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "teamsappcontestresults.azurewebsites.net"
+    ],
+    "showLoadingIndicator": true
+}

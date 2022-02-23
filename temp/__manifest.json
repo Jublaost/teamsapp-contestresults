@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "id": "dfefb7f0-93f6-11ec-ad93-05bc78f50708",
+  "version": "0.0.1",
+  "packageName": "teamsappcontestresults",
+  "developer": {
+    "name": "Jublaost",
+    "websiteUrl": "https://tvonment-jublaost-teamsapp-contestresults-q7q6vxwx929vr9-3007.githubpreview.dev",
+    "privacyUrl": "https://tvonment-jublaost-teamsapp-contestresults-q7q6vxwx929vr9-3007.githubpreview.dev/privacy.html",
+    "termsOfUseUrl": "https://tvonment-jublaost-teamsapp-contestresults-q7q6vxwx929vr9-3007.githubpreview.dev/tou.html"
+  },
+  "name": {
+    "short": "Contest Results",
+    "full": "Contest Results"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://tvonment-jublaost-teamsapp-contestresults-q7q6vxwx929vr9-3007.githubpreview.dev/contestResultsTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ],
+      "sharePointPreviewImage": "https://tvonment-jublaost-teamsapp-contestresults-q7q6vxwx929vr9-3007.githubpreview.dev/assets/contestResultsTab-preview.png",
+      "supportedSharePointHosts": [
+        "sharePointFullPage",
+        "sharePointWebPart"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "tvonment-jublaost-teamsapp-contestresults-q7q6vxwx929vr9-3007.githubpreview.dev"
+  ],
+  "showLoadingIndicator": true
+}
