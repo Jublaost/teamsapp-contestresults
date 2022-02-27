@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
   "manifestVersion": "1.11",
-  "id": "dfefb7f0-93f6-11ec-ad93-05bc78f50708",
+  "id": "a09bd573-02d3-4d2c-ae2d-da2b6520f0d7",
   "version": "0.0.1",
   "packageName": "teamsappcontestresults",
   "developer": {

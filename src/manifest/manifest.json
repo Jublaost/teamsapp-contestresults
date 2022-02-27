@@ -1,9 +1,9 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
     "manifestVersion": "1.11",
-    "id": "dfefb7f0-93f6-11ec-ad93-05bc78f50708",
-    "version": "0.0.1",
-    "packageName": "teamsappcontestresults",
+    "id": "{{APPLICATION_ID}}",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
     "developer": {
         "name": "Jublaost",
         "websiteUrl": "https://teamsappcontestresults.azurewebsites.net",
@@ -11,18 +11,18 @@
         "termsOfUseUrl": "https://teamsappcontestresults.azurewebsites.net/tou.html"
     },
     "name": {
-        "short": "Contest Results",
-        "full": "Contest Results"
+        "short": "Act Contest Results",
+        "full": "Kulti22 Act Contest Results"
     },
     "description": {
-        "short": "TODO: add short description here",
-        "full": "TODO: add full description here"
+        "short": "Contest Results",
+        "full": "See the results of the act contest"
     },
     "icons": {
-        "outline": "icon-outline.png",
-        "color": "icon-color.png"
+        "outline": "Logo_Kulti22_32x32.png",
+        "color": "Logo_Kulti22_192x192.png"
     },
-    "accentColor": "#D85028",
+    "accentColor": "#ffffff",
     "configurableTabs": [
         {
             "configurationUrl": "https://teamsappcontestresults.azurewebsites.net/contestResultsTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",

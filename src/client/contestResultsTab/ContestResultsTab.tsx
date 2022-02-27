@@ -54,6 +54,7 @@ export const ContestResultsTab = () => {
     }, []);
 
     const options = {
+        type: "bar",
         indexAxis: "y" as const,
         elements: {
             bar: {
@@ -71,13 +72,14 @@ export const ContestResultsTab = () => {
         }
     };
 
-    const labels = contestresults!.map((item: any) => item.name);
-
+    const ordered = contestresults!.sort((a: any, b: any) => (a.count < b.count) ? 1 : -1);
+    const labels = ordered!.map((item: any) => item.name);
+    const results = ordered!.map((item: any) => item.count);
     const data = {
         labels,
         datasets: [
             {
-                data: contestresults!.map((item: any) => item.count),
+                data: results,
                 borderColor: "rgb(240,113,0)",
                 backgroundColor: "rgba(240,113,0, 0.7)"
             }
@@ -100,7 +102,7 @@ export const ContestResultsTab = () => {
                         <div>
                             <Text content={entityId} />
                         </div>
-                        <Bar options={options} data={data} />;
+                        <Bar options={options} data={data} height={"500px"} width={"660px"} />
                     </div>
                 </Flex.Item>
                 <Flex.Item styles={{
